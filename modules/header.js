@@ -1,27 +1,61 @@
 var React = require('react');
 
-var sty = {
-	sty1: { 'height': '1rem', 'font-size': '.5rem', 'line-height': '1rem', 'color': '#fff', 'font-style': 'ºÚÌå', 'width': '50%', 'overflow': 'hidden' },
-	sty2: { 'height': '1rem', 'background': '#0398ff', 'margin-top': '.8rem' },
-	sty3: { 'height': '1rem', 'background': '#fff', 'border-radius': '.5rem', 'font-size': '.4rem', 'line-height': '1rem' },
-	sty4: { 'font-size': '.3rem', 'line-height': '1rem', 'color': '#fff', 'padding': '0 .22rem' },
-	sty5: { 'font-size': '.3rem', 'line-height': '1rem', 'color': '#fff', 'float': 'right' },
-	sty6: { 'height': '1rem', 'font-size': '.8rem', 'line-height': '.8rem', 'color': '#fff', 'font-style': 'ºÚÌå' }
-
-}
 var Head = React.createClass({
 	render: function() {
+		var sty = {
+			sty1: {
+				'height': '1rem',
+				'fontSize': '.5rem',
+				'lineHeight': '1rem',
+				'color': '#fff',
+				'fontStyle': 'é»‘ä½“',
+				'width': '50%',
+				'overflow': 'hidden'
+			},
+			sty2: {
+				'height': '3rem',
+				'background': '#0398ff',
+			},
+			sty3: {
+				'height': '1rem',
+				'background': '#fff',
+				'borderRadius': '.5rem',
+				'fontSize': '.4rem',
+				'lineHeight': '1rem'
+			},
+			sty4: {
+				'fontSize': '.3rem',
+				'lineHeight': '1rem',
+				'color': '#fff',
+				'padding': '0 .22rem'
+			},
+			sty5: {
+				'fontSize': '.3rem',
+				'lineHeight': '1rem',
+				'color': '#fff',
+				'float': 'right'
+			},
+			sty6: {
+				'height': '1rem',
+				'fontSize': '.8rem',
+				'lineHeight': '.8rem',
+				'color': '#fff',
+				'fontStyle': 'é»‘ä½“'
+			}
+
+		}
 		return(
-			<header className="mui-bar mui-bar-nav" style={sty.sty2}>
+			<header id="header" className="mui-bar mui-bar-nav" style={sty.sty2}>
 				<b className="mui-icon mui-icon-location mui-pull-left" style={sty.sty6}></b>
-			    <b className="mui-pull-left" style={sty.sty1}>ºÓÄÏ½ÌÓıÑ§Ôº(Î³ÎåÂ·¾­ÁùÂ·)</b>
-			    <b className="mui-pull-right" style={sty.sty5}>33¡ã ÇçÌì</b>
+			    <b className="mui-pull-left" style={sty.sty1}>æ²³å—æ•™è‚²å­¦é™¢(çº¬äº”è·¯ç»å…­è·¯)</b>
+			    <b className="mui-pull-right" style={sty.sty5}>33Â° æ™´å¤©</b>
 			    <div className="mui-input-row mui-search">
-				    <input type="search" className="mui-input-clear" placeholder="ÊäÈëÉÌ¼Ò¡¢ÉÌ¼ÒÃû³Æ" style={sty.sty3}></input>
+				    <input type="search" className="mui-input-clear" placeholder="è¾“å…¥å•†å®¶ã€å•†å®¶åç§°" style={sty.sty3}></input>
 				</div>
-				<div><i style={sty.sty4}>ÂéÀ±ÌÌ</i><i style={sty.sty4}>´óÁ³¼¦ÅÅ</i><i style={sty.sty4}>öÏÓã</i><i style={sty.sty4}>ÏºÎ²</i><i style={sty.sty4}>ÎÒµÄ²Ë</i><i style={sty.sty4}>ÒâÃæ</i><i style={sty.sty4}>ÂéÀ±Ğ¡ÁúÏº</i></div>
+				<div><i style={sty.sty4}>éº»è¾£çƒ«</i><i style={sty.sty4}>å¤§è„¸é¸¡æ’</i><i style={sty.sty4}>é±¿é±¼</i><i style={sty.sty4}>è™¾å°¾</i><i style={sty.sty4}>æˆ‘çš„èœ</i><i style={sty.sty4}>æ„é¢</i><i style={sty.sty4}>éº»è¾£å°é¾™è™¾</i></div>
 			</header>
 		)
 	}
-})
-ReactDOM.render(<Head/>, document.getElementById('header'))
+});
+
+module.exports = Head;
